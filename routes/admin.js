@@ -19,6 +19,7 @@ router.get('/conversations', async (req, res) => {
 router.get('/chats', async (req, res) => {
 	const chats = await Chat.find()
 	res.json(chats)
+	// res.json(chats)
 })
 
 router.get('/all', async (req, res) =>{
